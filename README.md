@@ -1,4 +1,4 @@
-# OS Assignment 2 – Lab 5 (fork, Linker & Loader)
+# OS Assignment 2 – fork, Linker & Loader
 
 All working Makefile + explanations
 

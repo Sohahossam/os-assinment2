@@ -8,10 +8,10 @@ make run     → execute everything + ldd
 ## Screenshots of compilation and execution
 
 **1. Compilation**  
-![Compilation](compilation.png)
+![Compilation](.png)
 
 **2. Running all programs with make run**  
-![make run](make_run.png)
+![make run](osmakerun.png)
 
 **3. fork() output**  
 ![fork](fork_output.png)

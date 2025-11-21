@@ -1,1 +1,38 @@
+Assignment 2 - Operating Systems
+Student Name: Soha Hossam
+Student ID: 23101397
 
+1. Code examples from Lab-5 (all implemented and working)
+   • process_creation.c      → demonstrates the fork() system call
+   • file1.c + file2.c       → demonstrates the role of the LINKER
+   • simple_program.c        → demonstrates the role of the LOADER (used with ldd)
+
+2. What the fork() example does
+   The program calls fork() which creates a child process.
+   Return value of fork():
+   - 0      → we are inside the child process
+   - >0     → we are inside the parent process (value = child PID)
+   - -1     → fork failed
+   Both parent and child print their own messages.
+
+3. Job of the Linker
+   The linker combines multiple object files and resolves external references.
+   In the example:
+   - file1.c contains the definition of hello()
+   - file2.c only declares and calls hello()
+   When we run: gcc file1.c file2.c -o linker_example
+   → The linker connects the call in file2.c to the actual code in file1.c
+
+4. Job of the Loader
+   When we execute a program (./simple_program), the loader
+   Loads the executable into memory ,Loads required shared libraries (shown by ldd simple_program)
+   ,Performs dynamic linking and address relocation
+    ,Starts program execution from main()
+
+5. Makefile
+   The provided Makefile compiles all three examples correctly:
+   - make            → builds process_creation, linker_example, simple_program
+   - make run        → runs all programs and shows ldd output
+
+Screenshots of compilation and execution are included in the repository.
+All programs were compiled and tested on Ubuntu (WSL).

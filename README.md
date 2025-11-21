@@ -5,16 +5,22 @@ All working Makefile + explanations
 Run:
 make         → compile
 make run     → execute everything + ldd
-## Screenshots
+## Screenshots of compilation and execution
 
-**Compilation**
+**1. Compilation**  
 ![Compilation](compilation.png)
 
-**Running all programs**
-![Running](running.png)
+**2. Running all programs with make run**  
+![make run](make_run.png)
 
-**Loader libraries (ldd)**
-![ldd output](ldd_output.png)
+**3. fork() output**  
+![fork](fork_output.png)
 
-**All files**
-![Files](files.png)
+**4. Linker example**  
+![linker](linker_output.png)
+
+**5. Loader + ldd**  
+![ldd](ldd_output.png)
+
+**6. All files**  
+![files](files_list.png)

@@ -11,16 +11,19 @@ make run     → execute everything + ldd
 ![Compilation](.png)
 
 **2. Running all programs with make run**  
-![make run](osmakerun.png)
+![make run](osmakerun.PNG)
 
-**3. fork() output**  
-![fork](fork_output.png)
+**3. fork() process and its output**  
+![fork](osProcess_creation_file.PNG)  
+![fork](osProcess_Creation.PNG)
 
-**4. Linker example**  
-![linker](linker_output.png)
+**4. Linker example: that links file1 with file2 you will see them linked in the output**  
+![linker](osFile1.PNG)
+![linker](osaFile2.PNG)
 
-**5. Loader + ldd**  
-![ldd](ldd_output.png)
+**5. Loader + ldd that list the dynamic libraries**  
+![ldd](simple_program)
+
 
 **6. All files**  
-![files](files_list.png)
+![files](osfiles.PNG)
